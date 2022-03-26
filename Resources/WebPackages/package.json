@@ -1,0 +1,63 @@
+{
+  "name": "codeeditorui",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "prebuild": "rm -rf dist",
+    "dev": "NODE_ENV=development vite --mode development --open --port 6767",
+    "build": "NODE_ENV=production vite build --mode production",
+    "preview": "vite preview --port 6767",
+    "lint": "eslint \"src/**/*.{ts,tsx,js,json,vue}\" --fix",
+    "format": "prettier --write --loglevel warn \"src/**/*.{js,json,tsx,ts,css,scss,vue,html,md}\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@repository.ouo.wiki:60000/Lakr233/CodeEditorUI.git"
+  },
+  "keywords": [],
+  "author": "Innei",
+  "license": "MIT",
+  "dependencies": {
+    "@codemirror/autocomplete": "0.19.15",
+    "@codemirror/closebrackets": "0.19.1",
+    "@codemirror/commands": "0.19.8",
+    "@codemirror/gutter": "0.19.9",
+    "@codemirror/highlight": "*",
+    "@codemirror/history": "0.19.2",
+    "@codemirror/lang-cpp": "0.19.1",
+    "@codemirror/lang-css": "0.19.3",
+    "@codemirror/lang-html": "0.19.4",
+    "@codemirror/lang-java": "0.19.1",
+    "@codemirror/lang-javascript": "0.19.7",
+    "@codemirror/lang-json": "0.19.2",
+    "@codemirror/lang-markdown": "0.19.6",
+    "@codemirror/lang-php": "0.19.1",
+    "@codemirror/lang-python": "0.19.4",
+    "@codemirror/lang-rust": "0.19.2",
+    "@codemirror/lang-sql": "0.19.4",
+    "@codemirror/lang-xml": "0.19.2",
+    "@codemirror/language": "*",
+    "@codemirror/language-data": "0.19.2",
+    "@codemirror/legacy-modes": "*",
+    "@codemirror/matchbrackets": "0.19.4",
+    "@codemirror/state": "0.19.9",
+    "@codemirror/stream-parser": "0.19.7",
+    "@codemirror/theme-one-dark": "0.19.1",
+    "@codemirror/view": "0.19.47",
+    "@ddietr/codemirror-themes": "1.0.9",
+    "@vueuse/core": "8.2.0"
+  },
+  "devDependencies": {
+    "@innei-util/prettier": "0.5.0",
+    "@vitejs/plugin-vue": "2.2.4",
+    "typescript": "4.6.3",
+    "unplugin-auto-import": "0.6.6",
+    "vite": "2.8.6",
+    "vite-plugin-checker": "0.4.4",
+    "vite-plugin-windicss": "1.8.3",
+    "vite-tsconfig-paths": "3.4.1",
+    "vue": "3.2.31",
+    "windicss": "3.5.1"
+  }
+}
