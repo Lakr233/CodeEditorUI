@@ -114,7 +114,7 @@ class CodeEditorCore: CodeEditor {
     func setDocumentData(_ doc: String) {
         let data = doc.data(using: .utf8) ?? Data()
         let base64 = data.base64EncodedString()
-        let script = "setText(atob('\(base64)'))"
+        let script = "setText(atou('\(base64)'))"
         DispatchQueue.global().async {
             self.waitForLoad()
             self.associatedWebView.evaluateJavascriptWithRetry(javascript: script)
